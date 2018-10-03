@@ -1,7 +1,7 @@
 
 
 
-// This .ready() function means that the document is ready. 
+// This .ready() function means that the document is ready.
 // If anything is outside of this, the code will run before the document is ready.
 $(document).ready(function () {
   $(window).scroll(function () {
@@ -63,7 +63,6 @@ $(document).ready(function () {
 
     // Start listening for the 'scroll' event
      $document.scroll(function() {
-         console.log($document.scrollTop());
        if ($document.scrollTop() >= 5) {
          // Change 50 to the value you require
          // for the event to trigger
@@ -72,12 +71,11 @@ $(document).ready(function () {
          $element.removeClass(className);
        }
      });
-    
+
     // On page load, check the $document.scrollTop().
     // If scrollTop() is >= 5, then add the class 'box-shadow' to $('header')
     // This is a fix for the box-shadow not appearing on refresh.
     if ($document.scrollTop() >= 5) {
-        console.log('happens exactly once');
         $element.addClass(className);
     }
 
